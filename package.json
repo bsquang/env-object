@@ -1,0 +1,29 @@
+{
+  "name": "env-object",
+  "version": "0.0.1",
+  "author": "Chris Parker <me@chrisaparker.com>",
+  "description": "read and write environment variables using objects",
+  "keywords": [ "env", "environment" ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --require should --compilers coffee:coffee-script/register --reporter spec",
+    "build": "coffee --bare --compile --output lib/ src/",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atonparker/env-object.git"
+  },
+  "dependencies": {
+    "bluebird": "^2.8.2",
+    "lodash": "^3.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "mkdirp": "^0.5.0",
+    "mocha": "^2.1.0",
+    "rimraf": "^2.2.8",
+    "should": "^4.6.1"
+  },
+  "license": "MIT"
+}
