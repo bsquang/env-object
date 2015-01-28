@@ -1,4 +1,5 @@
 node_modules
 *.log
-temp
 src
+temp
+test
